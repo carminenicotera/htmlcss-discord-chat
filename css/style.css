@@ -7,14 +7,16 @@
 img {
   border-radius: 50%;
 }
-/* body {
-  height: 100vh;
-} */
+body {
+  overflow: hidden;
+}
 
 .wrapper {
   height: 100vh;
   display: flex;
   flex-direction: column;
+
+  
 }
 
 footer {
@@ -25,7 +27,7 @@ footer {
   nav {
     display: flex;
     justify-content: space-around;
-    padding: 18px;
+    padding: 15px;
 
     a {
       display: flex;
@@ -33,7 +35,7 @@ footer {
       align-items: center;
       color: white;
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.5rem;
       span {
         font-size: 12px;
       }
@@ -62,9 +64,13 @@ footer {
 }
 
 main {
-  /* height: calc(100% - 160px); */
   flex-grow: 1;
-  /* background-color: rgb(102, 102, 148);
-  overflow: auto; */
   overflow-y: auto;
+  background-color: #1c1d22;
+
+  h1 {
+    color: white;
+  }
+
+
 }
