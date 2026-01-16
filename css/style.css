@@ -4,6 +4,9 @@
     box-sizing: border-box
 } 
 
+img {
+  border-radius: 50%;
+}
 /* body {
   height: 100vh;
 } */
@@ -29,10 +32,17 @@ footer {
 }
 
 .sidebar {
-  width: 60px;
+  display: block;
+  position: relative;
+  width: 81px;
   flex-shrink: 0;
   background-color: #141318;
-  
+  text-align: center;
+  /* position: relative; */
+
+  div > img {
+    padding-top: 1rem;
+  }
 }
 
 main {
