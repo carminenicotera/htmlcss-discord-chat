@@ -3,3 +3,42 @@
     padding: 0;
     box-sizing: border-box
 } 
+
+/* body {
+  height: 100vh;
+} */
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  height: 80px;
+  background-color: red;
+  flex-shrink: 0;
+}
+
+.central-wrapper {
+  flex-grow: 1;
+  background-color: rgb(102, 102, 148);
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 60px;
+  flex-shrink: 0;
+  background-color: #141318;
+  
+}
+
+main {
+  /* height: calc(100% - 160px); */
+  flex-grow: 1;
+  /* background-color: rgb(102, 102, 148);
+  overflow: auto; */
+  overflow-y: auto;
+}
