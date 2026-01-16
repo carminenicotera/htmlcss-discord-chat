@@ -17,11 +17,28 @@ img {
   flex-direction: column;
 }
 
-header,
 footer {
-  height: 80px;
-  background-color: red;
+  height: 81px;
+  background-color: #2d2d35;
   flex-shrink: 0;
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 18px;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+      span {
+        font-size: 12px;
+      }
+    }
+  }
 }
 
 .central-wrapper {
@@ -38,7 +55,6 @@ footer {
   flex-shrink: 0;
   background-color: #141318;
   text-align: center;
-  /* position: relative; */
 
   div > img {
     padding-top: 1rem;
